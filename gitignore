@@ -1,0 +1,10 @@
+__pycache__/
+*.pu[cod]
+
+*.Python
+venv/
+
+db.sqlite3
+.DS_Store
+
+.vscode/
