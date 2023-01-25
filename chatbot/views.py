@@ -124,8 +124,11 @@ def chatanswer(request):
     file = open(f"./static/intents.json", encoding="UTF-8")
     data = json.loads(file.read())  
 
-    Chatbot_Data=pd.read_csv("./static/ChatBotData.csv") 
-    EmbData =np.load('./static/emb_file.npy')
+    #Chatbot_Data=pd.read_csv("./static/ChatBotData.csv") 
+    #EmbData =np.load('./static/emb_file.npy')
+    
+    Chatbot_Data=pd.read_csv("./static/ChatBotData_pro2.csv") 
+    EmbData =np.load('./static/emb_file_pro2.npy')
     
     def chat3(inp):
         # load trained model
